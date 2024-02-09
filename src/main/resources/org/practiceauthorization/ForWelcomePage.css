@@ -1,0 +1,14 @@
+/* Labels */
+
+.label {
+    -fx-font-family: Chiller;
+}
+
+.titleLabel {
+    -fx-font-size: 70px;
+}
+
+.welcomeLabel {
+    -fx-font-size: 50px;
+    -fx-text-fill: #560000;
+}

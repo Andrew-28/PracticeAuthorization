@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0"
+            style="-fx-background-color: #452222;"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.practiceauthorization.SignInController">
+    <children>
+        <AnchorPane layoutY="80.0" prefHeight="270.0" prefWidth="600.0" style="-fx-background-color: #e8b7b7;">
+            <children>
+                <TextField layoutX="163.0" layoutY="71.0" prefHeight="25.0" prefWidth="275.0" promptText="Login" fx:id="Email"/>
+                <PasswordField layoutX="163.0" layoutY="110.0" prefHeight="25.0" prefWidth="275.0" promptText="Password" fx:id="Password"/>
+                <Label layoutX="217.0" layoutY="-4.0"
+                       styleClass="welcomeLabel" stylesheets="@ForSignInPage.css"
+                       text="Door to Hell" textFill="#560000">
+                    <font>
+                        <Font name="Chiller" size="50.0" />
+                    </font>
+                </Label>
+                <Button layoutX="238.0" layoutY="159.0"
+                        mnemonicParsing="false"
+                        prefHeight="48.0" prefWidth="135.0"
+                        styleClass="signInButton" stylesheets="@ForSignInPage.css"
+                        text="to come in" textFill="WHITE"
+                        onAction="#SignInUser">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="127.0" layoutY="-20.0" prefHeight="100.0" prefWidth="352.0" styleClass="titleLabel" stylesheets="@ForSignInPage.css" text="eDnipro Students" textFill="WHITE">
+            <font>
+                <Font name="Chiller" size="70.0" />
+            </font>
+        </Label>
+        <Button layoutX="492.0" layoutY="6.0"
+                mnemonicParsing="false"
+                prefHeight="27.0" prefWidth="107.0"
+                styleClass="signUpButton" stylesheets="@ForSignInPage.css"
+                text="get the key" textFill="WHITE"
+                onAction="#OpenSignUpWindow"/>
+    </children>
+</AnchorPane>

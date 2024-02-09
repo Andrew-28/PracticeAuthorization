@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0"
+            style="-fx-background-color: #452222;"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.practiceauthorization.SignUpController">
+    <children>
+        <AnchorPane layoutY="80.0" prefHeight="270.0" prefWidth="600.0" style="-fx-background-color: #e8b7b7;">
+            <children>
+                <TextField layoutX="163.0" layoutY="71.0" prefHeight="25.0" prefWidth="275.0" promptText="First name (necessarily)" fx:id="Name"/>
+                <TextField layoutX="163.0" layoutY="110.0" prefHeight="25.0" prefWidth="275.0" promptText="Login (necessarily)" fx:id="Email"/>
+                <PasswordField layoutX="163.0" layoutY="149.0" prefHeight="25.0" prefWidth="275.0" promptText="Password (necessarily)" fx:id="Password"/>
+                <Button layoutX="257.0" layoutY="198.0"
+                        mnemonicParsing="false"
+                        prefHeight="30.0" prefWidth="87.0"
+                        styleClass="signUpButton" stylesheets="@ForSignUpPage.css"
+                        text="Sign up" textFill="WHITE"
+                        onAction="#SignUpUser">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="195.0" layoutY="-3.0" prefHeight="49.0" prefWidth="211.0" styleClass="welcomeLabel" stylesheets="@ForSignUpPage.css" text="Are you sure?" textFill="#5b5b5b">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="127.0" layoutY="-20.0" prefHeight="56.0" prefWidth="347.0" styleClass="titleLabel" stylesheets="@ForSignUpPage.css" text="eDnipro Students" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Button layoutX="465.0" layoutY="6.0" mnemonicParsing="false" styleClass="signInButton" stylesheets="@ForSignUpPage.css" text="back to the door" />
+    </children>
+</AnchorPane>

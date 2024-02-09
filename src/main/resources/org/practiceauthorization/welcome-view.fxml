@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0"
+            style="-fx-background-color: #452222;"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.practiceauthorization.WelcomeController">
+  <children>
+    <AnchorPane layoutY="80.0" prefHeight="270.0" prefWidth="600.0" style="-fx-background-color: #e8b7b7;">
+      <children>
+        <Label fx:id="welcomeText" layoutX="69.0" layoutY="63.0" styleClass="welcomeLabel" stylesheets="@ForWelcomePage.css" text="You made the right choice, son." textFill="#5b5b5b">
+          <font>
+            <Font name="System Bold" size="26.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+    <Label layoutX="127.0" layoutY="-20.0" styleClass="titleLabel" stylesheets="@ForWelcomePage.css" text="eDnipro Students" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="36.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
